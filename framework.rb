@@ -35,7 +35,7 @@ class Test
 
         log '<div class="console-passed">' + success_msg + '</div>', true
       else
-        message ||= "#{vars[:default_failed_test_message]}"
+        message ||= "Something is wrong"
         log "<div class='console-failed'>Test Failed: " + message.to_s + "</div>", true
 
         if $describing
